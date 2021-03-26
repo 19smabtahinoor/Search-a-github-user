@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,500&display=swap');
+*{
+box-sizing: border-box;
+color:#000000;
+}
+
+body{
+    font-family: 'Ubuntu', monospace;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    margin:0px;
+    background:#ddd;
+    color:#000000 !important;
+    height:100vh;
+    overflow:hidden;
+
+}
+
+.user-form{
+    width:100%;
+    max-width:600px;
+}
+
+.search-bar{
+    width:100%;
+    display:block;
+    padding:18px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border:none;
+    outline:none;
+    font-size:18px;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+    margin-bottom:25px;
+}
+.card{
+    max-width:600px;
+    display: flex;
+    background:#fff;
+    border-radius:13px;
+    -webkit-border-radius:13px;
+    -moz-border-radius:13px;
+    -ms-border-radius:13px;
+    -o-border-radius:13px;
+    padding:30px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow:  20px 20px 60px #bebebe,
+             -20px -20px 60px #ffffff;
+}
+
+
+.user-avatar{
+    overflow:hidden;
+}
+
+.user-avatar img{
+  width:150px;
+  height:150px;
+  border-radius:100%;
+  -webkit-border-radius:100%;
+  -moz-border-radius:100%;
+  -ms-border-radius:100%;
+  -o-border-radius:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:6px solid #ddd
+}
+.user-name{
+    font-size: 26px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.user_login{
+    font-size: 16px;
+    color: #827e7e;
+    font-weight: 500;
+}
+
+.user-bio{
+    color:#827e7e;
+    margin-top:-13px;
+    text-align: center;
+    margin-bottom: 22px;
+
+}
+.user-loaction{
+    color:#827e7e;
+    margin-top:-30px;
+    text-align: center;
+    margin-bottom:28px;
+    font-size: 11px;
+}
+
+.user-follwers-follwing-repos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.list-of-followers-follwing{
+    display: flex;
+    list-style:none;
+    padding:0px;
+    max-width: 400px;
+    position: relative;
+    top: -23px;
+}
+.list-of-followers-follwing li{
+    display: flex;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    margin: 15px;
+}
+.list-of-followers-follwing li b{
+    padding-left:5px;
+    font-family: 'Ubuntu', monospace;
+}
+.user-repos-details {
+    margin-top: -36px;
+}
+.repos{
+    padding:0.25rem 0.5rem;
+    background: rgb(119 113 113 / 24%);
+    color: rgb(114 109 109);
+    font-size:13px;
+    text-decoration: none;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    margin-bottom:5px;
+    margin-right:3px;
+    display:inline-block;
+}
+
+.projectby{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color:rgb(114, 109, 109);
+    margin-top:18px;
+}
+.link-kabid{
+    text-decoration:none;
+    color:white;
+    background:#52a8e9;
+    padding:3px;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    margin-left:3px;
+}
+
+
+@media(max-width:500px){
+    .card{
+        flex-direction: column;
+        align-items: center;
+        margin:18px;
+    }
+    .search-bar{
+        max-width: 89%;
+        margin-left: 17px;
+    }
+    .user-bio{
+        text-align: center;
+    }
+    .user-name{
+        text-align: center;
+    }
+    .user-loaction{
+        text-align: center;
+    }
+}
+
+/* .card.activecard{
+    background:#29324F;
+    color:white;
+} */
